@@ -1,33 +1,64 @@
 <div id="home">
-  <div class="container">
-    <div class="row">
-      <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
-        <h2>This is our Home Page!</h2>
-        <form class="clearfix mb-4" action="POST">
-          <div class="form-group">
-            <label for="example-text">Example Text</label>
-            <input type="text" id="example-text" class="form-control" aria-describedby="example-text" placeholder="Enter Example Text">
-          </div>
-          <div class="form-group">
-            <label for="example-description">Example Description</label>
-            <textarea class="form-control" id="example-description" aria-describedby="example-description" placeholder="Enter Example Description"></textarea>
-          </div>
-          <button id="submit" class="btn btn-primary float-right">Submit</button>
-        </form>
-        <h3>Examples:</h3>
-        <ul id="example-list" class="list-group">
-          {{#each examples}}
-          <li data-id="{{this.id}}" class="list-group-item">
-            <a href="example/{{this.id}}">{{this.text}}</a>
-            <button class="btn btn-danger float-right delete">ｘ</button>
-          </li>
-          {{/each}}
-        </ul>
-      </div>
+<body id="bootstrap-override">
+    <div class="notfooter">
+
+    <!-- SIDEBAR -->
+
+    <div id="side-nav" class="side-bar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Clients</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Contact Us!</a>
     </div>
-  </div>
+          
+    <!-- Use any element to open the sidenav -->
+    <span onclick="openNav()"><i class="fas fa-bars"></i></span>
+    <!-- login -->
+    <div id="user-login">
+        <span><i class="fas fa-user-plus"></i><a href="#">Login</a></span>
+        <span class="divider"> |</span>
+        <span><a href="#">Sign Up</a></span>
+    </div>
+
+    <div class="container">
+        <div id="title" class="container">
+            <h1>GeoTrend<i class="fab fa-twitter-square"></i></h1>
+            <h3><em>Find Trending Hashtags In Your Area</em></h3>
+        </div><!-- end of header -->
+
+            <form id="form" data-parsley-validate>
+                <span>Discover Trends by Location: </span>
+                <input id="input-override" type="text" placeholder="Enter Location Here" required=""> <!-- input field for location search -->
+                <br>
+                <button id="button-override" type="button" class="btn btn-primary">Search</button> <!-- button for submission of search -->
+            </form>
+        <div class="storage"> <!-- empty container to hold hashtags and other future data --></div>
+    </div>
+    </div>
+        <!-- FOOTER -->
+        <footer id="sticky-footer">
+            <div class="social-icons">
+                <i class="fab fa-linkedin"><a href="#"></a></i>
+                <i class="fab fa-reddit-square"><a href="#"></a></i>
+                <i class="fab fa-facebook"><a href="#"></a></i>
+                <i class="fas fa-phone-square"><a href="#"></a></i>
+            <div id="site-map">
+                <span><a href="#">Private Policy</a></span>
+                <span class="divider"> |</span>
+                <span><a href="#">Site Map</a></span>
+            </div>
+            </div>
+            
+        
+        </footer>
 </div>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
+ <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <!-- parsely -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.8.1/parsley.min.js"></script>
+      
+    <!-- JQUERY -->
+    <script type="text/javascript" src="assets/js/app.js"></script>

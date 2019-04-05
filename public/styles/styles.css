@@ -1,3 +1,233 @@
-.list-group-item {
-  line-height: 2.5;
+* {
+    margin: 0;
+    padding: 0;
 }
+
+body {
+    font-family: Merriweather, Lato, sans-serif;
+}
+
+/* SIDEBAR STYLES */
+.side-bar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the side-bar */
+  }
+  
+  /* The navigation menu links */
+  .side-bar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .side-bar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .side-bar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+
+  /* media queries */
+  @media screen and (max-height: 450px) {
+    .side-bar {padding-top: 15px;}
+    .side-bar a {font-size: 18px;}
+  }
+
+  .fas.fa-bars {
+      font-size: 35px;
+  }
+
+  #user-login {
+      float: right;
+      margin-right: 30px;
+      margin-top: 10px;
+  }
+
+  .fa-user-plus {
+      padding-right: 10px;
+  }
+
+/* HEADER ELEMENT STYLES */
+#title {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+h1 {
+    text-align: center;
+    font-size: 50px;
+    background-color: #1dcaff;
+    border-radius: 40px;
+    width: 35%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    box-shadow: 0px 3px 5px 5px #ccc;
+}
+
+/* FONT AWESOME STYLES */
+#bootstrap-override .fa-twitter-square{
+    display: inline-block;
+    padding-left: 15px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* #bootstrap-override {
+    background-color: transparent !important;
+} */
+
+
+/* INPUT FORM STYLES */
+form {
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+#input-override {
+    width: 25%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    border-radius: 40px;
+}
+
+/* BUTTON STYLES */
+
+#button-override {
+    width: 15%;
+    margin-top: 20px;
+    background-color: #1dcaff;
+    color: black;
+    border-radius: 40px;
+    box-shadow: 3px 3px 5px #ccc;
+}
+
+#bootstrap-override button:hover {
+    background-color: orange;
+}
+
+::placeholder {
+    text-align: center;
+}
+
+.storage {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* FOOTER STYLES */
+#sticky-footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    background-color: #1dcaff;
+    padding-top: -20px;
+}
+
+.social-icons {
+    text-align: center;
+    font-size: 55px;
+    
+    
+}
+
+/* FONT AWESOME STYLES */
+
+.fab {
+    font-size: 50px;
+    padding-right: 15px;
+}
+
+.social-icons .fa-phone-square {
+    font-size: 50px;
+    margin-left: 1px;
+}
+
+.fab:hover {
+    color: orange;
+}
+
+.fa-phone-square:hover {
+    color: orange;
+}
+
+
+
+.fas {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+span a {
+    display: inline-block;
+    font-size: 18px;
+    color: black;
+    line-height: normal;
+    text-decoration: none;
+    margin-top: -30px;
+}
+
+span a:hover {
+    color: orange;
+}
+
+#site-map {
+    display: inline-block;
+    vertical-align: 15%;
+    margin-left: 50%;
+    margin-top: -50px;
+}
+
+.divider {
+    font-size: 20px;
+}
+
+.notfooter {
+    height: 100%;
+    min-height: 100vh;
+}
+
+.error {
+    background-color: red;
+    height: auto;
+    width: 50%;
+    margin: 50px auto 0;
+    border-radius: 5px;
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+}
+
+.results-heading {
+    font-size: 30px;
+}
+
