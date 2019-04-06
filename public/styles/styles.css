@@ -1,3 +1,4 @@
+/* DEFAULT STYLING  */
 * {
     margin: 0;
     padding: 0;
@@ -5,23 +6,92 @@
 
 body {
     font-family: Merriweather, Lato, sans-serif;
+    background: url("https://i.imgur.com/OGbRDTG.jpg?1") no-repeat center center fixed;
+    background-size: cover;
+   
 }
 
-/* SIDEBAR STYLES */
-.side-bar {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+/* MAIN CONTENT POSITION AND STYLE */
+.nav-content {
+    /* border: 1px solid black; */
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    width: 40%;
+}
+
+.nav-content ul {
+    padding-left: 45px;
+}
+
+.container li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.navigation a {
+    margin-right: 5px;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+/* LOGO STYLING */
+
+.search-content {
+    position: absolute;
+    top: 15%;
+    left: 8%;
+}
+
+.search, .motto {
+    margin-left: 10%;
+}
+
+.motto {
+    margin-top: -25%;
+}
+
+
+
+
+/* BACKGROUND IMAGE STYLING */
+
+/* #bg {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+}
+
+#bg img {
+    position: absolute
+    top 0;
     left: 0;
-    background-color: #111; /* Black*/
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the side-bar */
-  }
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+} */
+
+/* SIDEBAR STYLES
+.side-bar {
+    height: 100%; 
+    width: 0; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  } 
   
-  /* The navigation menu links */
   .side-bar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -29,29 +99,29 @@ body {
     color: #818181;
     display: block;
     transition: 0.3s;
-  }
+  } */
   
-  /* When you mouse over the navigation links, change their color */
-  .side-bar a:hover {
+
+  /* .side-bar a:hover {
     color: #f1f1f1;
   }
   
-  /* Position and style the close button (top right corner) */
+  /* Position and style the close button (top right corner)
   .side-bar .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
     margin-left: 50px;
-  }
+  } */
   
   
-  #main {
+  /* #main {
     transition: margin-left .5s;
     padding: 20px;
-  }
+  } */
 
-  /* media queries */
+  /* media queries
   @media screen and (max-height: 450px) {
     .side-bar {padding-top: 15px;}
     .side-bar a {font-size: 18px;}
@@ -70,8 +140,9 @@ body {
   .fa-user-plus {
       padding-right: 10px;
   }
+  */
 
-/* HEADER ELEMENT STYLES */
+/* 
 #title {
     margin-top: 75px;
     margin-bottom: 75px;
@@ -86,8 +157,7 @@ h1 {
     margin-bottom: 35px;
     box-shadow: 0px 3px 5px 5px #ccc;
 }
-
-/* FONT AWESOME STYLES */
+ 
 #bootstrap-override .fa-twitter-square{
     display: inline-block;
     padding-left: 15px;
@@ -103,9 +173,8 @@ h3 {
 } */
 
 
-/* INPUT FORM STYLES */
-form {
-    /* border: 1px solid black; */
+
+/* form {
     text-align: center;
 }
 
@@ -114,11 +183,11 @@ form {
     margin-top: 1%;
     margin-bottom: 1%;
     border-radius: 40px;
-}
+} */
 
 /* BUTTON STYLES */
 
-#button-override {
+/* #button-override {
     width: 15%;
     margin-top: 20px;
     background-color: #1dcaff;
@@ -139,10 +208,10 @@ form {
     width: 50%;
     margin: 0 auto;
     text-align: center;
-}
+} */
 
 /* FOOTER STYLES */
-#sticky-footer {
+/* #sticky-footer {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -157,11 +226,11 @@ form {
     font-size: 55px;
     
     
-}
+} */
 
 /* FONT AWESOME STYLES */
 
-.fab {
+/* .fab {
     font-size: 50px;
     padding-right: 15px;
 }
@@ -229,5 +298,5 @@ span a:hover {
 
 .results-heading {
     font-size: 30px;
-}
+} */
 
