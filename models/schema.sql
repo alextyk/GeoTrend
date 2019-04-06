@@ -41,3 +41,6 @@ CREATE TABLE `geotrend_db`.`cities` (
     REFERENCES `geotrend_db`.`trends` (`id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE);
+=======
+DROP DATABASE IF EXISTS twitter_db;
+CREATE DATABASE twitter_db;
