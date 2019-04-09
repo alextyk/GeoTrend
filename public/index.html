@@ -8,18 +8,23 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="styles/styles.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
     <title>GeoTrend</title>
 </head>
 <body id="bootstrap-override">
-    <div class="container">
+    <section class="landing-page">
+        <!-- <img src=https://i.imgur.com/OGbRDTG.jpg?1" alt="Background Hashtag Image"> -->
         <div class="nav-content">
                 <div class="container navigation">
-                    <ul>
+                    <ul class="landing-nav">
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="#">Pricing</a></li>
                         <!-- <li><a href="#">Testimonials</a></li> -->
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div> <!-- END OF NAVIGATION -->
             </div> <!-- END OF NAV CONTENT -->
@@ -31,21 +36,101 @@
                     <br>
                     <button class="search">Search</button>
             </div> <!-- END OF SEARCH CONTENT -->
-            <!-- results -->
-            <div id="results">
-            <div class="trends" id="topic1"></div>
-            <div class="trends" id="topic2"></div>
-            <div class="trends" id="topic3"></div>
-            <div class="trends" id="topic4"></div>
-            <div class="trends" id="topic5"></div>
-            <div class="trends" id="topic6"></div>
-            <div class="trends" id="topic7"></div>
-            <div class="trends" id="topic8"></div>
-            <div class="trends" id="topic9"></div>
-            <div class="trends" id="topic10"></div>
+    </section> <!-- END OF LANDING PAGE -->
+    
+    <div id="about" class="text-center">
+            <ul class="header-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Something Else</a></li>
+            </ul>
+        <section class="container about-section">
+            <h1>About Us</h1>
+            <h3>Mission Statement</h3>
+            <p>Our mission is to quickly provide local businesses with the information they need on trending topics in their area to better focus their marketing strategies.</p>
+            <h3>About Us</h3>
+            <p>Founded in 2019 in Denver, CO, GeoTrend was created out of the neccesitiy to provide small businesses a more effecient way to focus their marketing strategy.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas qui asperiores, praesentium eum esse fuga, minima illo consequatur sequi, at vel nobis necessitatibus ea rerum. A accusamus provident perspiciatis!</p>
+            <!-- Employee Spotlight -->
+            <div class="employees">
+                <div class="row">
+                    <div class="card col-2" style="width: 18rem;">
+                        <img src="http://placehold.jp/250x250.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Alex Tyk</h5>
+                            <p class="card-text">Founder and Chief Sports Enthusiast</p>
+                            <a href="#" class="">LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="card col-2" style="width: 18rem;">
+                        <img src="http://placehold.jp/250x250.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Scott Lehman</h5>
+                            <p class="card-text">Vice President of Margarita Consumption.</p>
+                            <a href="#" class="">LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="card col-2" style="width: 18rem;">
+                        <img src="http://placehold.jp/250x250.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Laura Greer</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="">LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="card col-2" style="width: 18rem;">
+                        <img src="http://placehold.jp/250x250.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mike Florez</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="">LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="card col-2" style="width: 18rem;">
+                        <img src="http://placehold.jp/250x250.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Richard Tutalo</h5>
+                            <p class="card-text">Director of Taco Enthusiasm.</p>
+                            <a href="#" class="">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-    </div> <!-- END OF CONTAINER -->
-       
+        </section>     
+    </div> <!-- END OF ABOUT ME SECTION -->
+        
+    <section id="contact" class="container">
+        <h1 class="text-center" >Contact Us!</h1>
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@mail.com">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="messageInput1">Message</label>
+                <textarea type="password" class="form-control" id="messageInput1" placeholder="Enter Your Message Here">
+                </textarea>
+            </div>
+            <button type="submit" class="btn btn-warning text-center">Submit</button>
+            </form>
+    </section> <!-- END OF CONTACT SECTION -->
+    <section class="footer">
+        <footer class="row">
+            <div class="back-to-top col-4">
+                <p><a href="#">Back To Top</a></p>
+            </div>
+            <div class="social-icons col-4 text-center">
+                <a><i class="fab fa-twitter"></i></a>
+                <a><i class="fab fa-facebook-f"></i></a>
+                <a><i class="fab fa-instagram"></i></a>
+                <a><i class="fab fa-reddit-alien"></i></a>
+            </div>
+            <div class="col-4">
+
+            </div>
+        </footer>
+    </section> <!-- END OF FOOTER SECTION -->
+    
 </body>
 </html>
