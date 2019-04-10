@@ -15,7 +15,7 @@ deploy:
   api_key: 
     secure: "faa1d925-1b3b-4146-bfb8-eb86aa541e90"
       
-before_install:
+# before_install:
   #- mysql -e 'CREATE DATABASE testdb;'
-  source mysql -e 'source /models/schema.sql' 
+  # source mysql -e 'source /models/schema.sql' 
   #if we want to wipe db each travis build? how to handle this (source/models/schema.sql)?
