@@ -1,7 +1,7 @@
 DROP DATABASE IF EXISTS geotrend_db;
 CREATE DATABASE geotrend_db;
 
-CREATE TABLE `geotrend_db`.`cities` (
+/* CREATE TABLE `geotrend_db`.`cities` (
   `city_name` TEXT NOT NULL,
   `num_searches` INT NULL,
   `date_added` DATETIME NULL,
@@ -40,7 +40,4 @@ CREATE TABLE `geotrend_db`.`cities` (
     FOREIGN KEY (`trend_id`)
     REFERENCES `geotrend_db`.`trends` (`id`)
     ON DELETE CASCADE
-    ON UPDATE CASCADE);
-=======
-DROP DATABASE IF EXISTS twitter_db;
-CREATE DATABASE twitter_db;
+    ON UPDATE CASCADE); */
