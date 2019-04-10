@@ -1,12 +1,16 @@
 /* DEFAULT STYLING  */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Merriweather, Lato, sans-serif;
-   
 }
 
 .landing-page {
@@ -33,13 +37,13 @@ body {
     list-style-type: none;
     display: inline-block;
     margin: 20px;
-    font-size: 24px;
+    font-size: 16px;
     text-align: center;
 }
 
 .navigation a {
     margin-right: 20px;
-    font-size: 16px;
+    font-size: 12px;
     text-decoration: underline;
     color: black;
     font-size: 20px;
@@ -65,7 +69,7 @@ body {
 /* ABOUT SECTION STYLING */
 #about {
     background-color: #FCFCFC;
-    height: 100vh;
+    height: auto;
     /* border: 3px solid black; */
 }
 
@@ -86,6 +90,8 @@ body {
     margin-bottom: 40px;
 }
 
+/* EMPLOYEE SECTION */
+
 #bootstrap-override .card {
     margin-right: 35px;
 }
@@ -94,9 +100,14 @@ body {
     margin-top: 10px;
 }
 
+.employees {
+    padding-bottom: 20px;
+}
+
 /* CONTACT PAGE STYLING */
 #contact {
-    height: 90vh;
+    height: auto;
+    padding-bottom: 100px;
 }
 
 #contact h1 {
