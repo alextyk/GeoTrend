@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "Mjflo123",
-    "database": "exampledb",
+    "password": "testpass",
+    "database": "geotrend_db",
     "host": "localhost",
     "dialect": "mysql"
   },
