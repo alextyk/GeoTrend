@@ -1,23 +1,32 @@
 /* DEFAULT STYLING  */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Merriweather, Lato, sans-serif;
+}
+
+.landing-page {
     background: url("https://i.imgur.com/OGbRDTG.jpg?1") no-repeat center center fixed;
     background-size: cover;
-   
+    /* border: 3px solid black; */
+    height: 100vh;
+    /* overflow: hidden; */
 }
 
 /* MAIN CONTENT POSITION AND STYLE */
 .nav-content {
     /* border: 1px solid black; */
-    position: fixed;
-    top: 2%;
-    left: 2%;
     width: 40%;
+    padding-top: 2%;
+    margin-left: 5%;
 }
 
 .nav-content ul {
@@ -28,14 +37,17 @@ body {
     list-style-type: none;
     display: inline-block;
     margin: 20px;
-    font-size: 24px;
+    font-size: 16px;
     text-align: center;
 }
 
 .navigation a {
-    margin-right: 5px;
-    font-size: 16px;
+    margin-right: 20px;
+    font-size: 12px;
     text-decoration: underline;
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 /* LOGO STYLING */
@@ -54,249 +66,77 @@ body {
     margin-top: -25%;
 }
 
-
-
-
-/* BACKGROUND IMAGE STYLING */
-
-/* #bg {
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-}
-
-#bg img {
-    position: absolute
-    top 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    min-width: 50%;
-    min-height: 50%;
-} */
-
-/* SIDEBAR STYLES
-.side-bar {
-    height: 100%; 
-    width: 0; 
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 0.5s;
-  } 
-  
-  .side-bar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  } */
-  
-
-  /* .side-bar a:hover {
-    color: #f1f1f1;
-  }
-  
-  /* Position and style the close button (top right corner)
-  .side-bar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  } */
-  
-  
-  /* #main {
-    transition: margin-left .5s;
-    padding: 20px;
-  } */
-
-  /* media queries
-  @media screen and (max-height: 450px) {
-    .side-bar {padding-top: 15px;}
-    .side-bar a {font-size: 18px;}
-  }
-
-  .fas.fa-bars {
-      font-size: 35px;
-  }
-
-  #user-login {
-      float: right;
-      margin-right: 30px;
-      margin-top: 10px;
-  }
-
-  .fa-user-plus {
-      padding-right: 10px;
-  }
-  */
-
-/* 
-#title {
-    margin-top: 75px;
-    margin-bottom: 75px;
-}
-h1 {
-    text-align: center;
-    font-size: 50px;
-    background-color: #1dcaff;
-    border-radius: 40px;
-    width: 35%;
-    margin: 0 auto;
-    margin-bottom: 35px;
-    box-shadow: 0px 3px 5px 5px #ccc;
-}
- 
-#bootstrap-override .fa-twitter-square{
-    display: inline-block;
-    padding-left: 15px;
-}
-
-h3 {
-    text-align: center;
-    margin-top: 20px;
-}
-
-/* #bootstrap-override {
-    background-color: transparent !important;
-} */
-
-
-
-/* form {
-    text-align: center;
-}
-
-#input-override {
-    width: 25%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    border-radius: 40px;
-} */
-
-/* BUTTON STYLES */
-
-/* #button-override {
-    width: 15%;
-    margin-top: 20px;
-    background-color: #1dcaff;
-    color: black;
-    border-radius: 40px;
-    box-shadow: 3px 3px 5px #ccc;
-}
-
-#bootstrap-override button:hover {
-    background-color: orange;
-}
-
-::placeholder {
-    text-align: center;
-}
-
-.storage {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-} */
-
-/* FOOTER STYLES */
-/* #sticky-footer {
-    position: absolute;
-    left: 0;
-    bottom: 0;
+/* ABOUT SECTION STYLING */
+#about {
+    background-color: #FCFCFC;
     height: auto;
-    width: 100%;
-    background-color: #1dcaff;
-    padding-top: -20px;
+    /* border: 3px solid black; */
 }
 
-.social-icons {
-    text-align: center;
-    font-size: 55px;
-    
-    
-} */
-
-/* FONT AWESOME STYLES */
-
-/* .fab {
-    font-size: 50px;
-    padding-right: 15px;
+.header-nav li {
+    display: inline-block;
+    margin: 30px;
+    text-decoration: none;
 }
 
-.social-icons .fa-phone-square {
-    font-size: 50px;
-    margin-left: 1px;
+.header-nav a {
+    color: black;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
-.fab:hover {
-    color: orange;
+#about h1 {
+    padding-top: 10px;
+    margin-bottom: 40px;
 }
 
-.fa-phone-square:hover {
-    color: orange;
+/* EMPLOYEE SECTION */
+
+#bootstrap-override .card {
+    margin-right: 35px;
 }
 
-
-
-.fas {
+#bootstrap-override .card-img-top {
     margin-top: 10px;
-    margin-left: 20px;
-    font-size: 20px;
 }
 
-span a {
-    display: inline-block;
-    font-size: 18px;
-    color: black;
-    line-height: normal;
-    text-decoration: none;
-    margin-top: -30px;
+.employees {
+    padding-bottom: 20px;
 }
 
-span a:hover {
-    color: orange;
-}
-
-#site-map {
-    display: inline-block;
-    vertical-align: 15%;
-    margin-left: 50%;
-    margin-top: -50px;
-}
-
-.divider {
-    font-size: 20px;
-}
-
-.notfooter {
-    height: 100%;
-    min-height: 100vh;
-}
-
-.error {
-    background-color: red;
+/* CONTACT PAGE STYLING */
+#contact {
     height: auto;
-    width: 50%;
-    margin: 50px auto 0;
-    border-radius: 5px;
-    padding: 15px;
-    color: #fff;
-    text-align: center;
+    padding-bottom: 100px;
 }
 
-.results-heading {
-    font-size: 30px;
-} */
+#contact h1 {
+    margin-top: 40px;
+}
+
+/* FOOTER STYLE */
+.footer {
+    position: relative;
+    background-color: #FCFCFC;
+    /* border: 2px solid black; */
+    height: 4.5em;
+    padding-top: 1em;
+}
+
+.back-to-top {
+    padding-left: 4%;
+    font-size: 20px;
+    text-decoration-color: #FCFCFC;
+}
+
+
+.social-icons a .fab {
+    font-size: 35px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+
+
+
 
