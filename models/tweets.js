@@ -7,7 +7,7 @@ module.exports = function(sequelize, DataTypes) {
     trend: DataTypes.STRING,
     location: DataTypes.STRING,
     retweets: DataTypes.INT,
-    favorites: DataType.INT
+    favorites: DataTypes.INT
   });
   return Tweet;
 };

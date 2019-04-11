@@ -1,6 +1,0 @@
-INSERT INTO tweets (tweet, replies, profile, username, trend, location, retweets, favorites) VALUES ('this is the greatest app ever', 50, "profile example1", 'Meeses', "girls", "denver", 95, 659);
-INSERT INTO tweets (tweet, replies, profile, username, trend, location, retweets, favorites) VALUES ('I hate this app', 75, "profile example1",'Bobbi', "BBQ", "denver", 6844, 486);
-INSERT INTO tweets (tweet, replies, profile, username, trend, location, retweets, favorites) VALUES ('Bobbi you sux', 1500, "profile example1", 'Sylvester', "broncos", "denver", 505, 1);
-INSERT INTO tweets (tweet, replies, profile, username, trend, location, retweets, favorites) VALUES ('i am the coolest', 26000, "profile example1",'Marilyn Manson', "BBQ", "LA", 9534, 4862);
-INSERT INTO tweets (tweet, replies, profile, username, trend, location, retweets, favorites) VALUES ('merica', 185,'Joe Biden', "profile example1", 'merica', "BBQ", "New York", 9874, 100000);
-INSERT INTO tweets (tweet, replies, profile, username, trend, location, retweets, favorites) VALUES ('anyone want a beer?', 0, "profile example1",'Owens', "girls", "colorado", 15684, 69574);
