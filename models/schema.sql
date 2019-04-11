@@ -1,2 +1,3 @@
+
 DROP DATABASE IF EXISTS twitter_db;
 CREATE DATABASE twitter_db;
