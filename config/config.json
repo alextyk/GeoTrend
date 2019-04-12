@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "Mjflo123",
-    "database": "exampledb",
+    "password": "27.77.26.207",
+    "database": "twitter_db",
     "host": "localhost",
     "dialect": "mysql"
   },
