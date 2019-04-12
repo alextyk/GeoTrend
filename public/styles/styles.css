@@ -30,7 +30,7 @@ body {
 }
 
 .nav-content ul {
-    padding-left: 45px;
+    padding-left: 2%;
 }
 
 .container li {
@@ -102,11 +102,31 @@ body {
 
 .employees {
     padding-bottom: 20px;
+    text-align: center;
 }
+
+.employees img {
+    width: 250px;
+    height: auto;
+}
+
+#carouselExampleCaptions {
+    margin: auto;
+}
+
+#bootstrap-override .carousel {
+    width: 400px;
+}
+
+#bootstrap-override .carousel-inner {
+    margin: auto;
+}
+
+
 
 /* CONTACT PAGE STYLING */
 #contact {
-    height: auto;
+    height: 100hv;
     padding-bottom: 100px;
 }
 
