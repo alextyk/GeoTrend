@@ -6,6 +6,54 @@
     overflow-x: hidden;
 }
 
+#tweets::-webkit-scrollbar-track
+{
+	border-radius: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track-piece
+{
+	border-radius: 5px;
+    background-color: #FCFCFC;
+}
+
+::-webkit-scrollbar
+{
+	width: 15px;
+	background-color: #FCFCFC;
+}
+
+::-webkit-scrollbar-track
+{
+	border-radius: 5px;
+    background-color: #FCFCFC;
+}
+
+::-webkit-scrollbar-track-piece
+{
+	border-radius: 5px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar
+{
+	width: 15px;
+	background-color: transparent;
+}
+
+#tweets::-webkit-scrollbar
+{
+	width: 15px;
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #555;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -92,26 +140,36 @@ body {
 }
 
 #results {
-    background: rgba(248, 248, 248, 0.75);
-    border-radius: 20px;
+    background: rgba(252, 252, 252, 0.80);
+    border-radius: 10px;
     text-align: center;
     font-size: 1.5rem;
     float: left;
     margin-left: 43%;
     width: 15vw;
+    height: 80vh;
     box-shadow: 2px 2px #cecdcd;
 }
 
+.trends {
+    margin: 1%;
+}
+
 #tweets {
-    background: rgba(248, 248, 248, 0.75);
-    border-radius: 20px;
+    background: rgba(252, 252, 252, 0.80);
+    border-radius: 10px;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     float: right;
     margin-right: 8%;
-    width: 15vw;
-    height: 75vh;
-    box-shadow: 2px 2px #cecdcd;
+    width: 30vw;
+    word-wrap: break-word;
+    font-weight: bold;
+    height: 80vh;
+}
+
+.rawtweets {
+    margin: 1%;
 }
 
 a {
