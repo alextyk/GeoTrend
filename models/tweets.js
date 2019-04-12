@@ -6,8 +6,8 @@ module.exports = function(sequelize, DataTypes) {
     username: DataTypes.STRING,
     trend: DataTypes.STRING,
     location: DataTypes.STRING,
-    retweets: DataTypes.INTEGER,
-    favorites: DataTypes.INTEGER
+    retweets: DataTypes.INT,
+    favorites: DataTypes.INT
   });
   return Tweet;
 };

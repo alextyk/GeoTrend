@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 html {
@@ -88,6 +89,38 @@ body {
 #about h1 {
     padding-top: 10px;
     margin-bottom: 40px;
+}
+
+#results {
+    background: rgba(248, 248, 248, 0.75);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    float: left;
+    margin-left: 43%;
+    width: 15vw;
+    box-shadow: 2px 2px #cecdcd;
+}
+
+#tweets {
+    background: rgba(248, 248, 248, 0.75);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    float: right;
+    margin-right: 8%;
+    width: 15vw;
+    height: 75vh;
+    box-shadow: 2px 2px #cecdcd;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit;
 }
 
 /* EMPLOYEE SECTION */
