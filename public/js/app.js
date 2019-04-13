@@ -68,7 +68,7 @@ function get_trending_topics(woeid) {
         var container = document.getElementById("results");
         for (var i = 0; i < 20; i++) {
             container.innerHTML +=
-                <div class="trends" data-value="${response[0].trends[i].name}"><a href="#">${response[0].trends[i].name}</a></div>;
+                `<div class="trends" data-value="${response[0].trends[i].name}"><a href="#">${response[0].trends[i].name}</a></div>`; /* eslint-disable-line */
         }
         $("#results").fadeIn(500);
     });
