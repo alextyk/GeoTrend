@@ -69,8 +69,10 @@ body {
     margin-top: -100px;
     font-family: "Ubuntu";
     font-size: 24px;
-    letter-spacing: .1em;
-    word-spacing: .2em;
+}
+
+.directions {
+    font-size: 14px;
 }
 
 /* SEARCH BUTTON STYLE */
@@ -89,7 +91,7 @@ body {
     border: 4px solid black;
     padding: 5px;
     margin-top: 5%;
-    margin-left: -38.5%;
+    margin-left: -35%;
 }
 
 .search {
