@@ -68,7 +68,7 @@ function get_trending_topics(woeid) {
         var container = document.getElementById("results");
         for (var i = 0; i < 20; i++) {
             container.innerHTML +=
-                <div class="trends" data-value="${response[0].trends[i].name}"><a href="#">${response[0].trends[i].name}</a></div>;
+            `<div class="trends" data-value="${response[0].trends[i].name}"><a href="#">${response[0].trends[i].name}</a></div>`;
         }
         $("#results").fadeIn(500);
     });
@@ -127,8 +127,8 @@ $("div").on("click", "div.rawtweets", function () {
         .then(function (data) {
             alert("tweet has been posted!")
             console.log(data);
-
         });
+        window.location.href = "/public/results"    
 });
 
 $("#searchBtndb").on("click", function () {

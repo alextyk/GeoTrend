@@ -1,7 +1,7 @@
 module.exports = {
-  username: process.env.USERNAME,
-  password: process.env.PASSWORD,
-  database: process.env.DATABASE,
-  host: process.env.HOST,
-  dialect: process.env.DIALECT
+  username: "root",
+  password: "Mjflo123",
+  database: "twitter_db",
+  host: "localhost",
+  dialect: "mysql"
 };
