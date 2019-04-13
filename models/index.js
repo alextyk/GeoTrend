@@ -13,8 +13,6 @@ if (env === 'development') {
   config = require(__dirname + "/../config/config.json")[env];
   
 }
-
-console.log({ config })
 var db = {};
 
 if (config.use_env_variable) {
