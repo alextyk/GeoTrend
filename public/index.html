@@ -10,31 +10,32 @@
     <link rel="stylesheet" href="styles/styles.css">
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Merriweather+Sans|Ubuntu" rel="stylesheet">
 
 
     <title>GeoTrend</title>
 </head>
 <body id="bootstrap-override">
     <section class="landing-page">
-        <!-- <img src=https://i.imgur.com/OGbRDTG.jpg?1" alt="Background Hashtag Image"> -->
-        <div class="nav-content">
-                <div class="container navigation">
-                    <ul class="landing-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <!-- <li><a href="#">Pricing</a></li> -->
-                        <!-- <li><a href="#">Testimonials</a></li> -->
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div> <!-- END OF NAVIGATION -->
-            </div> <!-- END OF NAV CONTENT -->
+        <nav class="navigation">
+              <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <!-- <li><a href="#">Pricing</a></li> -->
+                  <li><a href="#">Login</a></li>
+              </ul>
+          </nav>
             <div class="search-content">
                     <img src="images/geotrend-logo.png" alt="Company Logo" class="expand">
-                    <p class="motto">Local Trends for Local Business</p>
-                    <input class="search" type="text" placeholder="Enter Location Here">
+                    <h5 class="motto">Local Trends for Local Businesses</h5>
                     <br>
-                    <br>
-                    <button class="search">Search</button>
+                    <p> Use the search button below to find locally trending hashtags</p>
+                    <form id="search-bar">
+                        <input class="search" type="search">
+                        <i class="fa fa-search"></i>
+                    </form>
+                    
             </div> <!-- END OF SEARCH CONTENT -->
     </section> <!-- END OF LANDING PAGE -->
     
@@ -42,15 +43,22 @@
             <ul class="header-nav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">Something Else</a></li>
+                <li><a href="#">Login</a></li>
             </ul>
         <section class="container about-section">
-            <h1>About Us</h1>
-            <h3>Mission Statement</h3>
-            <p>Our mission is to quickly provide local businesses with the information they need on trending topics in their area to better focus their marketing strategies.</p>
-            <h3>About Us</h3>
-            <p>Founded in 2019 in Denver, CO, GeoTrend was created out of the neccesitiy to provide small businesses a more effecient way to focus their marketing strategy.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas qui asperiores, praesentium eum esse fuga, minima illo consequatur sequi, at vel nobis necessitatibus ea rerum. A accusamus provident perspiciatis!</p>
+            <h1 class="info">Company Info</h1>
+          <div class="row">
+            <div class="col-6 mission">
+                <h3><i>Mission Statement</i></h3>
+                <p class="mission-state">Our mission is to quickly provide local businesses with the information they need on trending topics in their area to better focus their marketing strategies.</p>
+            </div> <!-- END OF MISSION COL -->
+            <div class="col-6 about-us">
+                <h3><i>About Us</i></h3>
+                <p class="about-us-info">Founded in 2019 in Denver, CO, GeoTrend was created out of the neccesitiy to provide small businesses a more effective way to focus their marketing strategy through trending topics on social media.</p>
+                <p class="about-us-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptas qui asperiores, praesentium eum esse fuga, minima illo consequatur sequi, at vel nobis necessitatibus ea rerum. A accusamus provident perspiciatis!</p>
+              </div> <!-- END OF ABOUT COL -->
+          </div> <!-- END OF ABOUT ROW -->
+            
             <hr>
             <!-- Employee Spotlight -->
             <div class="employees">
@@ -87,10 +95,10 @@
                           </div>
                         </div>
                         <div class="carousel-item">
-                          <img src="http://placehold.jp/250x250.png" class="d-block w-100" alt="Mike Info">
+                          <img src="images/mike-florez.jpeg" class="d-block w-100" alt="Mike Info">
                           <div class="carousel-caption d-none d-md-block">
                             <h5>Mike Florez</h5>
-                            <p>Vice President of Crushing Vapes</p>
+                            <p>Vice President of Vaping</p>
                           </div>
                         </div>
                         <div class="carousel-item">
@@ -120,7 +128,7 @@
         <form>
             <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@mail.com">
+                <input type="email" class="form-control email-field" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@mail.com">
                 <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group">
