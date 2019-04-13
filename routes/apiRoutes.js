@@ -14,7 +14,7 @@ module.exports = function(app) {
 
   // Create a new example
   app.post("/api/tweets", function(req, res) {
-    db.Example.create(req.body).then(function(dbExample) {
+    db.Tweet.create(req.body).then(function(dbExample) {
       res.json(dbExample);
     });
   });
