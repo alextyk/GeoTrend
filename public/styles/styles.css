@@ -227,6 +227,30 @@ a:hover {
     margin-right: 20px;
 }
 
+/* #getrouteresults {
+    margin: 20px;
+    width: 375px;
+    height: 375px;
+    padding: 30px;
+}  */
+
+#getrouteresults {
+    background: rgba(252, 252, 252, 0.80);
+    border-radius: 10px;
+    /* overflow: scroll; */
+    word-wrap: break-word;
+    font-size: 1.5rem;
+    float: right;
+    margin-right: 8%;
+    width: 40vw;
+    height: auto;
+    box-shadow: 2px 2px #cecdcd;
+    padding: 20px;
+}
+
+
+
+
 
 
 

@@ -1,3 +1,7 @@
 models/index.js
 node_modules
+<<<<<<< Updated upstream
 public/js/app.js
+=======
+app.js
+>>>>>>> Stashed changes
