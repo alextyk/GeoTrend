@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "27.77.26.207",
-    "database": "twitter_db",
+    "password": "testpass",
+    "database": "geotrend_db",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "null",
+    "password": null,
     "database": "testdb",
     "host": "localhost",
     "dialect": "mysql",
